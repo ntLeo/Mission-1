@@ -128,3 +128,5 @@ const serverPort = app.listen(PORT, () => {
         console.log("Server Error", error)
     }
 })
+
+module.exports = serverPort;

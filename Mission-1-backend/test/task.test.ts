@@ -1,10 +1,11 @@
 const request = require('supertest');
 const app = require('../server');
+const serverPort = require('../server');
 
 
 
 afterAll(async () => {
-    await new Promise(resolve => app.close(resolve));
+    await new Promise(resolve => serverPort.close(resolve));
 });
 
 
