@@ -1,9 +1,10 @@
 const request = require('supertest');
-const app = require('../server'); 
+const app = require('../server');
 
 
-afterAll(done => {
-    app.close(done);
+
+afterAll(async () => {
+    await new Promise(resolve => app.close(resolve));
 });
 
 
