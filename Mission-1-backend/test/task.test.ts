@@ -2,6 +2,11 @@ const request = require('supertest');
 const app = require('../server'); 
 
 
+afterAll(done => {
+    app.close(done);
+});
+
+
 // API 1 TEST
 
 describe('POST /api_1', () => {
