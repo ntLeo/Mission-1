@@ -45,7 +45,7 @@ app.post("/api_1", (req, res) => {
 });
 
 
-// API 2
+// API 2 RISK RATING
 
 const keywords = ["collide", "crash", "scratch", "bump", "smash"];
 
