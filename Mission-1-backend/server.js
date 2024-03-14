@@ -78,7 +78,7 @@ app.post("/api_2", (req, res) => {
   }
 });
 
-// API 3
+// API 3 PREMIUMS
 
 function calculatePremiums(carValue, riskRating) {
   const yearlyPremium = Math.round((carValue * riskRating) / 100);
